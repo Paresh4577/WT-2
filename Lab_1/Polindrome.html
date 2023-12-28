@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		n1 = parseInt(prompt("Enter a 1 number:"));
+        rev=0;
+		temp = n1;
+      while(temp>0){
+           r=temp%10;
+           rev = (rev*10)+r;
+           temp = parseInt(temp/10);
+		 }
+
+		 if(n1==rev){
+		 	document.write('The No is Polindrome')
+		 }
+		 else{
+		 	document.write('The No is Not Polindrome')
+		 }
+	</script>
+
+</body>
+</html>

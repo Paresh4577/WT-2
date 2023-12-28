@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	n1 = prompt("Enter a 1 number:");
+	n2 = prompt("Enter a 2 number:");
+    n3 = prompt("Enter a 3 number:");
+
+    if(n1>n2){
+        if(n1>n3){
+            console.log("The Number "+n1+" is Max");
+        }
+    	
+    }
+    else if(n2>n1){
+        if(n2>n3){
+            console.log("The Number "+n2+" is Max");
+        }
+    }
+    
+    else{
+        console.log("The Number "+n3+" is Max");
+    }	
+    
+
+</script>
+	
+
+</body>
+</html>
