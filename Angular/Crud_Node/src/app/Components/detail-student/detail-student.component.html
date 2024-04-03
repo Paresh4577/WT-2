@@ -1,0 +1,14 @@
+
+<div className="row me-3 mt-4 text-center">
+    <h1>MeetingID : {{Student.MeetingID}}</h1>
+        <h1>OrganizerName :  {{Student.OrganizerName}}</h1>
+        <h1>ParticipantName :  {{Student.ParticipantName}}</h1>
+        <h1>Date :  {{Student.Date}}</h1>
+        <h1>Time :  {{Student.Time}}</h1>
+        <div className="col">
+        <button className="btn btn-primary">Update</button>
+        </div>
+        <div className="col text-center">
+        <button className="btn btn-danger" (click)="Delete(Student.MeetingID)">Delete</button>
+        </div>
+    </div>
