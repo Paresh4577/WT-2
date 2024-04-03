@@ -1,0 +1,28 @@
+<p>Hello Paresh!</p>
+
+
+<input type="text" placeholder="Enter Name" [(ngModel)]="setName"/>
+
+<input type="text" placeholder="Enter Age" [(ngModel)]="setAge"/>
+
+<input type="text" placeholder="Enter City" [(ngModel)]="setCity"/><br/>
+<button (click)="add()">Add</button>
+<button (click)="editButton()">Edit</button>
+
+<div *ngFor="let s of Students">
+    <div>{{s.name}}</div>
+    <div>{{s.age}}</div>
+    <div>{{s.city}}</div>
+    <div>
+        <button (click)="edit(s.name)">Edit</button>
+    </div>
+    <div>
+        <button (click)="delete(s.name)">Delete</button>
+    </div>
+    <hr/>
+</div>
+
+
+
+
+
