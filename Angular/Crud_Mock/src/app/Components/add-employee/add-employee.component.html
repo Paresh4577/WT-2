@@ -1,0 +1,5 @@
+<form #EmpForm="ngForm" class="my-5" (ngSubmit)="saveData(EmpForm.value)">
+    <input type="text" name="Name" [(ngModel)]="data.Name" placeholder="Enter Name"/>
+    <input type="text" name="Image" [(ngModel)]="data.Image" placeholder="Enter Url of Image"/>
+    <input type="submit"/>
+</form>

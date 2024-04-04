@@ -1,0 +1,12 @@
+
+<div className="row me-3 mt-4 text-center">
+    <h1>MeetingID : {{Student.id}}</h1>
+        <h1>OrganizerName :  {{Student.Name}}</h1>
+        <div className="col">
+            <img [src]="Student.Image"/><br>
+        <button className="btn btn-primary">Update</button>
+        </div>
+        <div className="col text-center">
+        <button className="btn btn-danger" (click)="Delete(Student.id)">Delete</button>
+        </div>
+    </div>
