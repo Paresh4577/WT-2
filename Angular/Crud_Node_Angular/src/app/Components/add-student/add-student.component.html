@@ -1,0 +1,38 @@
+<!-- <form #myForm="ngForm" class="my-5" (ngSubmit)="save(myForm.value)">
+    <input type="text" name="MeetingID" placeholder="Enter Meeting ID" [(ngModel)]="data.MeetingID"/><br>
+    <input type="text" name="OrganizerName" placeholder="Enter Organizer Name" [(ngModel)]="data.OrganizerName"/><br>
+    <input type="text" name="ParticipantName" placeholder="Enter Participant Name" [(ngModel)]="data.ParticipantName"/><br>
+    <input type="date" name="Date" [(ngModel)]="data.Date"/><br>
+    <input type="Time" name="Time" [(ngModel)]="data.Time"/><br>
+</form> -->
+<div class="container">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <form #myForm="ngForm" class="row-g-3" (ngSubmit)="save(myForm.value)">
+        
+        <div class="col-md-12">
+          <label for="exampleInputEmail1" class="form-label">MeetingID</label>&nbsp;
+          <input type="text" name="MeetingID" class="form-control" placeholder="Enter Meeting ID" [(ngModel)]="data.MeetingID"/>
+        </div>
+        <div class="col-md-12">
+          <label for="exampleInputPassword1" class="form-label">Organizer Name</label>
+          <input type="text" name="OrganizerName" class="form-control" placeholder="Enter Organizer Name" [(ngModel)]="data.OrganizerName"/>
+        </div>
+        <div class="col-md-12">
+            <label for="exampleInputPassword1" class="form-label">Participant Name</label>
+            <input type="text" name="ParticipantName" class="form-control" placeholder="Enter Participant Name" [(ngModel)]="data.ParticipantName"/>
+        </div>
+        <div class="col-md-12">
+            <label for="exampleInputPassword1" class="form-label">Date</label>
+            <input type="date" name="Date" class="form-control" placeholder="Enter Date" [(ngModel)]="data.Date"/>
+          </div>
+          <div class="col-md-12">
+            <label for="exampleInputPassword1" class="form-label">Time</label>
+            <input type="time" name="Time" class="form-control" placeholder="Enter Time" [(ngModel)]="data.Time"/>
+          </div><br>
+        <div class="col-md-12">
+            <button class="btn btn-success" type="submit" *ngIf="id==0">Add</button>
+            <button class="btn btn-warning" type="submit" *ngIf="id>0">Edit</button>
+        </div>
+      </form>
+</div>
+

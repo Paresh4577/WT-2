@@ -1,0 +1,14 @@
+
+<div className="row me-3 mt-4 text-center">
+    <h1>MeetingID : {{Student.MeetingID}}</h1>
+        <h1>OrganizerName :  {{Student.OrganizerName}}</h1>
+        <h1>ParticipantName :  {{Student.ParticipantName}}</h1>
+        <h1>Date :  {{Student.Date}}</h1>
+        <h1>Time :  {{Student.Time}}</h1>
+        <div class="col">
+        <button class="btn btn-primary" routerLink="/StudentEdit/+{{Student.MeetingID}}">Update</button>
+        </div>
+        <div class="col">
+        <button class="btn btn-danger" (click)="Delete(Student.MeetingID)" routerLink="/">Delete</button>
+        </div>
+    </div>
